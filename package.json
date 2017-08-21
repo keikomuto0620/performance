@@ -1,0 +1,23 @@
+{
+  "name": "performance",
+  "version": "1.0.0",
+  "description": "- レンダリングブロック JavaScript/CSS - クリティカルレンダリングパス",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --server './' --files './js/*.js' './css/*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelydylan/performance.git"
+  },
+  "author": "steelydylan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steelydylan/performance/issues"
+  },
+  "homepage": "https://github.com/steelydylan/performance#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
