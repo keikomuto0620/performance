@@ -10,7 +10,7 @@ var cleanCss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var minifyHtml = require('gulp-minify-html');
 var inlineimg = require('gulp-inline-image-html');
-var inlineCss = require('gulp-inline-css');
+var inlinesource = require('gulp-inline-source');
 
 gulp.task('html',function(){
     gulp.src(['src/index.html'])
@@ -20,7 +20,7 @@ gulp.task('html',function(){
                 this.emit('end');
             }
         }))
-        .pipe(inlineCss())
+        .pipe(inlinesource())
         .pipe(inlineimg('./'))
         .pipe(minifyHtml())
         .pipe(gulp.dest('./'))
