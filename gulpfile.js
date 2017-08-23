@@ -21,7 +21,7 @@ gulp.task('html',function(){
             }
         }))
         .pipe(inlinesource())
-        .pipe(inlineimg('./'))
+        // .pipe(inlineimg('./'))
         .pipe(minifyHtml())
         .pipe(gulp.dest('./'))
 });
