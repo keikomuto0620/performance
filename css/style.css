@@ -58,3 +58,11 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.card-img {
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  background-image: url(../images/martin-jernberg-80106.jpg);
+  background-size: cover;
+}
